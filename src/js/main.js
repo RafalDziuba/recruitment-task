@@ -33,9 +33,19 @@ const showClicksNumber = () => {
     clicks = 0;
     localStorage.setItem("clicks", clicks);
     showClicks.textContent = "0 times";
+    resetBtn.classList.add("hide-reset");
   };
   resetBtn.addEventListener("click", resetClicks);
 };
 
+const hideResetBtn = () => {
+  if (clicks < 5) {
+    resetBtn.classList.add("hide-reset");
+  } else {
+    resetBtn.classList.remove("hide-reset");
+  }
+};
+
 articleBtn.addEventListener("click", clickCounter);
 articleBtn.addEventListener("click", toggleModal);
+articleBtn.addEventListener("click", hideResetBtn);

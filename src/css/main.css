@@ -136,6 +136,11 @@ body section.articles .show-modal {
   visibility: visible;
 }
 
+body section.articles .hide-reset {
+  opacity: 0;
+  visibility: hidden;
+}
+
 @media screen and (min-width: 360px) {
   body section.articles .base-article {
     width: 320px;
