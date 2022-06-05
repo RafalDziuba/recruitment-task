@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="/src/css/main.css" />
   </head>
-  <body>
+  <body class="dark-body">
     <section class="articles">
       <article class="base-article">
         <div class="article-img-container">
@@ -36,10 +36,16 @@
             and protection for modern and legacy infrastructures and SaaS
             platforms, managed via a single app with no hardware required.
           </p>
-          <button id="article-btn">Button</button>
+          <button class="article-btn">Button</button>
         </div>
       </article>
+      <div class="modal">
+        <div class="hide-modal"><span>X</span></div>
+        <h3>Alert!</h3>
+        <p>You have clicked <span class="clicks-number">X times</span> to related button</p>
+      </div>
     </section>
+    <div class="darker"></div>
   </body>
 
   <script src="/src/js/main.js"></script>

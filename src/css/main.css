@@ -6,9 +6,24 @@
   font-size: 10px;
 }
 
+.darker {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #1212125c;
+}
+
+.darker-active {
+  opacity: 1;
+  visibility: visible;
+}
+
 body {
   height: 100vh;
-  width: 100%;
 }
 
 body section.articles {
@@ -54,6 +69,64 @@ body section.articles .base-article .article-text button {
   border-radius: 32px;
   background-color: #e4c1ae;
   color: white;
+  cursor: pointer;
+}
+
+body section.articles .modal {
+  position: fixed;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 210px;
+  width: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column wrap;
+  background-color: white;
+}
+
+body section.articles .modal p,
+body section.articles .modal h3 {
+  margin-left: 2rem;
+}
+
+body section.articles .modal p,
+body section.articles .modal .clicks-number {
+  font-size: 1.2rem;
+}
+
+body section.articles .modal h3 {
+  font-size: 2.2rem;
+}
+
+body section.articles .modal .clicks-number {
+  font-weight: 700;
+}
+
+body section.articles .modal p {
+  margin-top: 2rem;
+  padding-right: 1rem;
+}
+
+body section.articles .modal div {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  user-select: none;
+  cursor: pointer;
+}
+
+body section.articles .modal div span {
+  font-size: 2rem;
+}
+
+body section.articles .show-modal {
+  opacity: 1;
+  visibility: visible;
 }
 
 @media screen and (min-width: 360px) {
