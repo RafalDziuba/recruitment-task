@@ -64,6 +64,7 @@ body {
           background-color: $primary;
           color: white;
           cursor: pointer;
+
         }
       }
     }
@@ -89,7 +90,8 @@ body {
         margin-left: 2rem;
       }
       p,
-      .clicks-number {
+      .clicks-number,
+      .reset {
         font-size: 1.2rem;
       }
       h3 {
@@ -103,20 +105,25 @@ body {
         padding-right: 1rem;
         font-weight: 300;
       }
-      div {
+      button.hide-modal {
         position: absolute;
         top: 1rem;
         right: 1rem;
         user-select: none;
         cursor: pointer;
-        span {
-          font-size: 2rem;
-        }
+        background: none;
+        border: none;
+        font-size: 2rem;
+
       }
-      .reset {
+      button.reset {
         color: red;
         font-weight: 700;
         cursor: pointer;
+        background: none;
+        border: none;
+        margin-left: 3rem;
+        margin-top: 2rem;
       }
     }
 
@@ -368,10 +375,6 @@ body {
           }
         }
 
-        .reset {
-          margin-bottom: 1.2rem;
-          margin-right: 4.6rem;
-        }
       }
     }
   }

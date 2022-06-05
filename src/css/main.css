@@ -95,7 +95,8 @@ body section.articles .modal h3 {
 }
 
 body section.articles .modal p,
-body section.articles .modal .clicks-number {
+body section.articles .modal .clicks-number,
+body section.articles .modal .reset {
   font-size: 1.2rem;
 }
 
@@ -113,22 +114,25 @@ body section.articles .modal p {
   font-weight: 300;
 }
 
-body section.articles .modal div {
+body section.articles .modal button.hide-modal {
   position: absolute;
   top: 1rem;
   right: 1rem;
   user-select: none;
   cursor: pointer;
-}
-
-body section.articles .modal div span {
+  background: none;
+  border: none;
   font-size: 2rem;
 }
 
-body section.articles .modal .reset {
+body section.articles .modal button.reset {
   color: red;
   font-weight: 700;
   cursor: pointer;
+  background: none;
+  border: none;
+  margin-left: 3rem;
+  margin-top: 2rem;
 }
 
 body section.articles .show-modal {
@@ -318,9 +322,5 @@ body section.articles .hide-reset {
   }
   body section.articles .modal div span {
     font-size: 2.5rem;
-  }
-  body section.articles .modal .reset {
-    margin-bottom: 1.2rem;
-    margin-right: 4.6rem;
   }
 }
