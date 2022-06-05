@@ -1,11 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>[Name] [Surname] - Recruitment task</title>
-</head>
-<body>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Rafał Dziuba - Recruitment task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/css/main.css" />
+  </head>
+  <body>
+    <section class="articles">
+      <article class="base-article">
+        <div class="article-img-container">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="/images/w538.jpg" />
+            <source media="(min-width: 910px)" srcset="/images/w450.jpg" />
+            <source media="(min-width: 760px)" srcset="/images/w596.jpg" />
+            <source media="(min-width: 360px)" srcset="/images/w450.jpg" />
+            <source media="(min-width: 280px)" srcset="/images/w200.jpg" />
+            <img src="/images/w720.jpg" alt="beach during sunset" />
+          </picture>
+        </div>
+        <div class="article-text">
+          <h1>Lorem Ipsum</h1>
+          <p>
+            Infinitely scalable, feature-rich and cloud-native data management
+            and protection for modern and legacy infrastructures and SaaS
+            platforms, managed via a single app with no hardware required.
+          </p>
+          <button id="article-btn">Button</button>
+        </div>
+      </article>
+    </section>
+  </body>
 
-</body>
+  <script src="/src/js/main.js"></script>
+</html>
