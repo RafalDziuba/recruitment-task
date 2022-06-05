@@ -1,10 +1,10 @@
 const articleBtn = document.querySelector(".article-btn");
+const resetBtn = document.querySelector(".reset");
 
 let clicks = localStorage.getItem("clicks");
 const clickCounter = () => {
   clicks++;
   localStorage.setItem("clicks", clicks);
-  console.log(clicks);
 };
 
 const toggleModal = () => {
@@ -28,7 +28,13 @@ const toggleModal = () => {
 const showClicksNumber = () => {
   const showClicks = document.querySelector(".clicks-number");
   const clicksNumber = localStorage.getItem("clicks");
-  showClicks.textContent = clicksNumber + ' times';
+  showClicks.textContent = clicksNumber + " times";
+  const resetClicks = () => {
+    clicks = 0;
+    localStorage.setItem("clicks", clicks);
+    showClicks.textContent = "0 times";
+  };
+  resetBtn.addEventListener("click", resetClicks);
 };
 
 articleBtn.addEventListener("click", clickCounter);

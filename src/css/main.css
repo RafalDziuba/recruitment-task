@@ -110,18 +110,25 @@ body section.articles .modal .clicks-number {
 body section.articles .modal p {
   margin-top: 2rem;
   padding-right: 1rem;
+  font-weight: 300;
 }
 
 body section.articles .modal div {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 1rem;
+  right: 1rem;
   user-select: none;
   cursor: pointer;
 }
 
 body section.articles .modal div span {
   font-size: 2rem;
+}
+
+body section.articles .modal .reset {
+  color: red;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 body section.articles .show-modal {
@@ -181,6 +188,23 @@ body section.articles .show-modal {
   }
   body section.articles .base-article .article-text button {
     padding: 1.5rem 4rem;
+  }
+  body section.articles .modal {
+    width: 490px;
+  }
+  body section.articles .modal p,
+  body section.articles .modal h3 {
+    margin-left: 3rem;
+  }
+  body section.articles .modal p,
+  body section.articles .modal .clicks-number {
+    font-size: 1.6rem;
+  }
+  body section.articles .modal h3 {
+    font-size: 3.2rem;
+  }
+  body section.articles .modal div span {
+    font-size: 2.5rem;
   }
 }
 
@@ -267,5 +291,31 @@ body section.articles .show-modal {
     width: 128px;
     height: 48px;
     font-weight: 700;
+  }
+  body section.articles .modal {
+    width: 920px;
+  }
+  body section.articles .modal p,
+  body section.articles .modal h3 {
+    margin-left: 3rem;
+  }
+  body section.articles .modal p,
+  body section.articles .modal .clicks-number {
+    font-size: 1.6rem;
+  }
+  body section.articles .modal h3 {
+    font-size: 4.2rem;
+    margin-top: 4.6rem;
+  }
+  body section.articles .modal div {
+    top: 4.6rem;
+    right: 4.6rem;
+  }
+  body section.articles .modal div span {
+    font-size: 2.5rem;
+  }
+  body section.articles .modal .reset {
+    margin-bottom: 1.2rem;
+    margin-right: 4.6rem;
   }
 }
